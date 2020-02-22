@@ -1,0 +1,64 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    
+            
+    <title>Zaloguj się | Authorizer</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Zaloguj się</h1>
+            <div class="row">
+                <form class="col s6" id="myForm">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for="firstName">Imię</label>
+                            <input type="text" name="Imię" id="firstName" onfocusout="validateFirstName()" />
+                            <span class="helper-text"></span>
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="lastName">Nazwisko</label>
+                            <input type="text" name="Nazwisko" id="lastName" onfocusout="validateLastName()">
+                            <span class="helper-text"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for="password">Hasło</label>
+                            <input type="password" name="Hasło" id="password" onfocusout="validatePassword()">
+                            <span class="helper-text"></span>
+                        </div>
+                        <div class="input-field col s6">
+                            <label for="confirmPassword">Potwierdź Hasło</label>
+                            <input type="password" name="Potwierdź hasło" id="confirmPassword" onfocusout="validateConfirmPassword()">
+                            <span class="helper-text"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="email">E-Mail</label>
+                            <input type="email" name="Email" id="email" onfocusout="validateEmail()">
+                            <span class="helper-text"></span>
+                        </div>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit">
+                        Potwierdź
+                    </button>
+                </form>
+                <div class="col s6">
+                    <img src="https://previews.123rf.com/images/peshkov/peshkov1906/peshkov190600871/124852611-creative-programming-wallpaper-with-head-outline-ai-and-coding-concept-3d-rendering.jpg" 
+                    style="width: 100%; border-radius: 6px; opacity: 0.9;">
+
+                </div>
+        
+            </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
